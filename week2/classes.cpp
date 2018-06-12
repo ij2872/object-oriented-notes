@@ -74,6 +74,14 @@ public:
         cout << "The date is " << month << "/" << day << "/" << year << endl;
     }
 
+    // ----- OVERLOADING -----
+
+    // subtracting two dates
+    int operator-(const Date& rhs){
+        int diff = day - rhs.day;
+        return diff;
+    }
+
 // private stuff at the bottom, public top.
 private:
     int year;
@@ -86,5 +94,9 @@ int main(){
 
     Date date {2018, 6, 12};
     date.print();
+
+    Date date2 {2018, 1, 1};
+
+
     return 0;
 }
