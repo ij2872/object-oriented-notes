@@ -33,21 +33,41 @@ public:
         day = d;
     }
 
+    // ----- GETTERS -----
     int getYear() { return year;}
     int getMonth(){ return month;}
     int getDay()  { return day;}
 
+    // ----- SETTERS -----
     void setYear(int yr) {
         year = yr;
     }
+
     void setDay(int dy) {
         day = dy;
     }
+
     void setMonth(int mth) {
         if(mth < 1 || mth > 12){
             cout << "Not valid" << endl;
         }
-        month = mth
+        month = mth;
+    }
+
+    // ----- METHODS -----
+    void addDay(){
+        // Add day validation.
+        ++day;
+    }
+
+    // Method overloading
+    void addDay(int d){
+        day += d;
+    }
+
+    // to_string() is a standard in classes for returning string
+    string to_string(){
+        return std::to_string(year) + " " + std::to_string(month) + " " + std::to_string(day);
     }
 
     void print(){
