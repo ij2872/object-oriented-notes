@@ -77,9 +77,16 @@ public:
     // ----- OVERLOADING -----
 
     // subtracting two dates
-    int operator-(const Date& rhs){
+    // Added const since method is not changing anything
+    int operator-(const Date& rhs) const{
         int diff = day - rhs.day;
         return diff;
+    }
+
+    // friend: not officially part of the class, operator belongs to streams
+    friend ostream& operator<<(ostream& ost, const Date& date){
+        ost << date.to_string();
+        return ost;
     }
 
 // private stuff at the bottom, public top.
@@ -94,6 +101,7 @@ int main(){
 
     Date date {2018, 6, 12};
     date.print();
+    cout << date << endl;
 
     Date date2 {2018, 1, 1};
 

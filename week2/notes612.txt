@@ -1,6 +1,6 @@
-# Notes: 
+Notes: 
 
-### Class
+Class
     -User defined type that may contain data members, function members, and member types.
     -A template encapsulating data and code that manipulates it.
 
@@ -9,15 +9,74 @@
         -structure (Struct)
         -class
 
-### Method
+Method
     -A function that manipulates data in a Class
 
-### instance
+instance
     -an encapsulated bundle of code
 
-### object
+object
     -instance of a class containing a set of encapsulated data
 
-### operator
+operator
     -A symbol that modifies an object, or generates a new object from other objects
 
+
+
+friend
+    - not officially part of the class, operator belongs to streams
+    friend ostream& operator<<(ostream& ost, const Date&);
+
+UML
+    Unified Modeling Language
+    '-' private
+    '+' public
+    variable name : type 
+    method name(variables) : return type
+
+
+
+
+------------------------- Day 2 -------------------------
+.h files do not have to go on g++
+
+g++ std=c++11 -o name file.cpp otherCppFile.cpp
+
+
+Abstraction 
+    - Summary of what is available to user
+
+Encapsulation
+
+Polymorphism 
+
+
+----- MAKEFILE -----
+
+
+makefile
+[
+    # bash comand CSS=g++, CSSFLAGS=c++ 
+
+    CXXFLAGS = -std=c++11
+
+    all: coordinate.o
+
+    debug: CXXFLAGS += -generates
+    debug: coordinate.o
+
+    coordinate.o: coordinate.cpp coordinate.h 
+        $(CXX) $(CXXFLAGS) -c coordinate.cpp
+        #-c compile but dont throw linker. Compile, but dont do everything else with it
+
+    clean: rm -f *.o a.out
+]
+
+
+----- MAPS -----
+#include 
+
+map<Date, string> planner;
+pair<Date, string> p = make_pair(Date, "class");
+planner.insert(p);
+cout << planner[date] << endl
