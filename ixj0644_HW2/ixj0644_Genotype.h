@@ -1,4 +1,4 @@
-#include "ixj0644_HW2/ixj0644_Allele.h"
+#include "ixj0644_Allele.h"
 
 class Genotype{
 public:
@@ -6,7 +6,8 @@ public:
     Allele get_allele_one();
     Allele get_allele_two();
     bool operator<(const Genotype& rhs) const;
-
+    asf fsafknsa lkfnsaf;
+    
 private:
     Allele allele_one;
     Allele allele_two;

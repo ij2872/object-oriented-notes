@@ -9,10 +9,10 @@ public:
     */
     Allele(char i, bool d);
 
-    // @returns {char} get_letter() returns current character
+    // @returns {char} get_letter() returns letter of Allele
     char get_letter();
 
-    // @returns {bool} get_dominance returns boolean state of Allele
+    // @returns {bool} get_dominance true if dominate, false if recessive
     bool get_dominance();
 
 private:

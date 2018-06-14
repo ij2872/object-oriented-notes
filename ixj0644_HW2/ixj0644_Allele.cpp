@@ -1,7 +1,6 @@
 #include "ixj0644_Allele.h"
 
 
-
 // Does this and this.
 Allele::Allele(char i, bool d){
     this->letter = i;
