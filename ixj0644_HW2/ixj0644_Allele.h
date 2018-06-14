@@ -1,7 +1,8 @@
 
 class Allele{
 public:
-
+   Allele() = default;
+    
     /*
      Allele - comment on what it does
      @params {char} i letter 

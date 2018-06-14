@@ -30,5 +30,5 @@
         "tuple": "cpp",
         "utility": "cpp"
     },
-    "C_Cpp.errorSquiggles": "Disabled"
+    "javascript.implicitProjectConfig.experimentalDecorators": true
 }

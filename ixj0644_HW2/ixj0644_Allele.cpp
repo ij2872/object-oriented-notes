@@ -1,6 +1,6 @@
 #include "ixj0644_Allele.h"
 
-
+using namespace std;
 // Does this and this.
 Allele::Allele(char i, bool d){
     this->letter = i;

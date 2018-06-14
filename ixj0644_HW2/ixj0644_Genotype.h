@@ -1,12 +1,13 @@
 #include "ixj0644_Allele.h"
 
+
 class Genotype{
 public:
+    Genotype() = default;
     Genotype(Allele a_one, Allele a_two);
-    Allele get_allele_one();
-    Allele get_allele_two();
-    bool operator<(const Genotype& rhs) const;
-    asf fsafknsa lkfnsaf;
+    Allele get_allele_one() const;
+    Allele get_allele_two() const;
+    bool operator <(const Genotype& rhs);
     
 private:
     Allele allele_one;
