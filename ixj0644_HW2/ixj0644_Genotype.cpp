@@ -8,15 +8,16 @@
             {Allele} a_two second Allele
 */
 Genotype::Genotype(Allele a_one, Allele a_two){
-    // if two dominate, either can be allele_one
 
-    // if one dominante, dominaate = allele_two
-
+    // @TODO comparison with char not dominance()
     // if only one allele is dominate
     if(a_one.get_dominance() != a_two.get_dominance()){
         // set dominate to allele_one
-        (a_one.get_dominance() == true) ? this->allele_one = a_one : this->allele_two = a_two;
-        return;
+        if (a_one.get_dominance() == true){
+            this->allele_one = a_one;
+            this->allele_two = a_two;
+            return;
+        }
     }
     // Otherwise set any allele to a_one
     this->allele_one = a_one;
