@@ -30,9 +30,9 @@ string Trait::get_phenotype() const{
  */
 ostream& operator<<(ostream& ost, const Trait& trt){
     ost << "Name: " << trt.name << endl\
-    << "Genotype: " << trt.get_genotype().get_allele_one().get_letter() << this->get_genotype().get_allele_two().get_letter() << endl\
-    << "Phenotype: " << trt.get_phenotype() << endl\
-    << endl;
+    << "Genotype: " << trt.get_genotype().get_allele_one().get_letter() \
+    << trt.get_genotype().get_allele_two().get_letter() << endl\
+    << "Phenotype: " << trt.get_phenotype() << endl;
 
     return ost;
 }

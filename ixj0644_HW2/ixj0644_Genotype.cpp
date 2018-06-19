@@ -9,7 +9,6 @@
 */
 Genotype::Genotype(Allele a_one, Allele a_two){
 
-    // @TODO comparison with char not dominance()
     // if only one allele is dominate
     if(a_one.get_dominance() != a_two.get_dominance()){
         // set dominate to allele_one
@@ -50,7 +49,7 @@ Allele Genotype::get_allele_two() const{
 bool Genotype::operator <(const Genotype& rhs){
 
     int genotype_one_value = (int) allele_one.get_letter() + (int) allele_two.get_letter();
-    int genotype_two_value = (int) rhs.get_allele_one().get_letter() + (int) rhs.get_allele_two.get_letter();
+    int genotype_two_value = (int) rhs.get_allele_one().get_letter() + (int) rhs.get_allele_two().get_letter();
 
     return genotype_one_value < genotype_two_value;
 }
