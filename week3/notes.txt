@@ -1,0 +1,114 @@
+
+map<Date, string> planner;
+planner.insert(make_pair(date, "class")); // add pair to map
+planner.erase(date); // erase date from map
+
+
+ITERATE 1
+string search = "class"
+bool found = false;
+for(pair<Date, string> p : planner){
+    if(p.second == search)
+        found = true;
+}
+
+ITERATE 2
+
+map<Date, string>::iterator it = planner.begin();
+for(; it!=planner.end(); it++){
+    it->second;
+}
+
+
+
+
+
+MVC
+new way to do constructors
+    View(Date& d):date(d){};
+
+
+
+
+--------------------------------------------
+                    REVIEW
+--------------------------------------------
+Encapsulation
+Make things private/protected 
+write UML ClassDiagram
+UML -> write .h file
+given .g, write .cpp file
+Does UML Match up code
+write a main file using a Class
+write the output of a program
+
+
+C++
+    Streams
+    Vectors
+    Maps
+    IO Manipulation and formatting
+    makefiles
+    include difference <> vs ""
+
+Encapsulation  
+    Classes (Constructor, get, set, operator overloading)
+    Public vs Private
+    .h vs .cpp
+
+Software Engineering
+    UML Class Diagrams
+    Software Design Patterns
+    Anti-patterns
+    Model-View-Control
+
+Streams 
+    Read input/output 
+    Type checking on input
+    How to set up an fstream or stringstream
+    What does 73ab read as if a int, string, double, char, auto [73, 73ab, 73.0, 7, 73ab]
+
+
+Vectors
+    Creating
+    addIndex
+    Iterate
+
+Map
+    Create
+    what is Key/value
+    create a pair
+    access elements
+    check if there is a key in a map (loop or count)
+
+I/O Manipulation    
+    hex, oct, dec
+    spacing, output field width (setw())
+    which ones are sticky, which one aren't
+
+makefiles
+    concepts
+    rule
+    dependency
+    what does CXX mean: c++
+    how to reference variables: $(variable)
+    how to call which rules
+
+    main.o: main.cpp A.h
+    rule: main.o
+    dependent: main.cpp a.h
+
+    running make: runs which ever call is first
+
+Includes
+    <> system libraries
+    "" your libraries
+
+Classes 
+    Encapsulation
+    Abstraction
+    friend
+
+
+
+
