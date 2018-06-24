@@ -16,6 +16,12 @@ Genotype Trait::get_genotype() const{
     return this->genotype;
 }
 
+string Trait::get_genotype_str() const{
+    stringstream ss;
+    ss << this->genotype.get_allele_one().get_letter() << this->genotype.get_allele_two().get_letter();
+    return ss.str();
+}
+
 string Trait::get_phenotype() const{
     return this->phenotype;
 }

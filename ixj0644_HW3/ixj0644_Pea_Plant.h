@@ -1,4 +1,6 @@
 #include "ixj0644_Trait.h"
+
+
 using namespace std;
 
 
@@ -15,10 +17,10 @@ public:
     void add_plant_height(Trait t);
 
 private:
-    Trait seed_color;
     Trait seed_shape;
-    Trait pod_color;
+    Trait seed_color;
     Trait pod_shape;
+    Trait pod_color;
     Trait flower_color;
     Trait flower_position;
     Trait plant_height;
