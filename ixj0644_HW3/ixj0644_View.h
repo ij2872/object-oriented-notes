@@ -1,4 +1,4 @@
-#include "Pea_Plant.h"
+#include "ixj0644_Pea_Plant.h"
 
 
 using namespace std;
@@ -13,6 +13,6 @@ public:
     void view_all_traits();
 
 private:
-    Pea_Plant& pea_plant();
+    Pea_Plant& pea_plant;
 
 };

@@ -1,3 +1,4 @@
+#ifndef ixj0644_Pea_Plant_h
 #include "ixj0644_Trait.h"
 
 
@@ -26,3 +27,4 @@ private:
     Trait plant_height;
 };
 
+#endif

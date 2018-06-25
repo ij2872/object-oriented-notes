@@ -1,6 +1,13 @@
 #include "ixj0644_Trait.h"
 
 
+/* 
+    Trait(string, Genotype, string)
+    @params 
+        {string} n: name of trait "seed color"
+        {Genotype} g: genotype for the trait
+        {string} p: phenotype for the trait
+*/
 
 Trait::Trait(string n, Genotype g, string p){
     this->name = n;
