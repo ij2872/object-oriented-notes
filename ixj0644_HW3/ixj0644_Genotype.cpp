@@ -46,9 +46,9 @@ Allele Genotype::get_allele_two() const{
         - Example: AA would be 65+65=130, which is less than 97+97=194
     @return {bool} true if allele_one < allele_two 
 */
-bool Genotype::operator <(const Genotype& rhs){
+bool Genotype::operator<(const Genotype &rhs) const{
 
-    int genotype_one_value = (int) allele_one.get_letter() + (int) allele_two.get_letter();
+    int genotype_one_value = (int) this->get_allele_one().get_letter() + (int) this->get_allele_two().get_letter();
     int genotype_two_value = (int) rhs.get_allele_one().get_letter() + (int) rhs.get_allele_two().get_letter();
 
     return genotype_one_value < genotype_two_value;

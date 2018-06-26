@@ -1,3 +1,6 @@
+#ifndef ixj0644_Pea_Plant_Trait_Maps_h
+#define ixj0644_Pea_Plant_Trait_Maps_h
+
 #include "ixj0644_Genotype.h"
 #include <map>
 
@@ -24,3 +27,5 @@ private:
     map<Genotype, string> plant_height;
 
 };
+
+#endif

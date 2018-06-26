@@ -1,4 +1,6 @@
 #ifndef ixj0644_Pea_Plant_h
+#define ixj0644_Pea_Plant_h
+
 #include "ixj0644_Trait.h"
 
 

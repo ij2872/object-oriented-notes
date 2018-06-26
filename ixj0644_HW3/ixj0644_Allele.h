@@ -1,3 +1,5 @@
+#ifndef ixj0644_Allele_h
+#define ixj0644_Allele_h
 
 class Allele{
 public:
@@ -21,3 +23,5 @@ private:
     char letter;
     bool dominance;
 };
+
+#endif

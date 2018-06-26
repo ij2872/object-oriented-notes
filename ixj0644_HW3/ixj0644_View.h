@@ -1,3 +1,6 @@
+#ifndef ixj0644_View_h
+#define ixj0644_View_h
+
 #include "ixj0644_Pea_Plant.h"
 
 
@@ -16,3 +19,5 @@ private:
     Pea_Plant& pea_plant;
 
 };
+
+#endif

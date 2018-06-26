@@ -40,7 +40,7 @@ Pea_Plant::Pea_Plant(){
         "Tall"};
 }
 
-/*  view_all_traits()
+/*  view_all_traits() - returns a string by using stringstream
     @return {string} string value of all traits
 */
 string Pea_Plant::view_all_traits(){
@@ -48,27 +48,31 @@ string Pea_Plant::view_all_traits(){
     
     ss << "Seed Shape" << endl;
     ss << "Genotype: " << this->seed_shape.get_genotype_str() << endl;
-    ss << "Phenotype: " << this->seed_shape.get_phenotype() << endl;
+    ss << "Phenotype: " << this->seed_shape.get_phenotype() << endl << endl;
     
     ss << "Seed Color" << endl;
     ss << "Genotype: " << this->seed_color.get_genotype_str() << endl;
-    ss << "Phenotype: " << this->seed_color.get_phenotype() << endl;
+    ss << "Phenotype: " << this->seed_color.get_phenotype() << endl << endl;
     
     ss << "Pod Shape" << endl;
     ss << "Genotype: " << this->pod_shape.get_genotype_str() << endl;
-    ss << "Phenotype: " << this->pod_shape.get_phenotype() << endl;
+    ss << "Phenotype: " << this->pod_shape.get_phenotype() << endl << endl;
     
     ss << "Pod Color" << endl;
     ss << "Genotype: " << this->pod_color.get_genotype_str() << endl;
-    ss << "Phenotype: " << this->pod_color.get_phenotype() << endl;
+    ss << "Phenotype: " << this->pod_color.get_phenotype() << endl << endl;
     
     ss << "Flower Color" << endl;
     ss << "Genotype: " << this->flower_color.get_genotype_str() << endl;
-    ss << "Phenotype: " << this->flower_color.get_phenotype() << endl;
+    ss << "Phenotype: " << this->flower_color.get_phenotype() << endl << endl;
+    
+    ss << "Flower Position" << endl;
+    ss << "Genotype: " << this->flower_position.get_genotype_str() << endl;
+    ss << "Phenotype: " << this->flower_position.get_phenotype() << endl << endl;
     
     ss << "Plant Height" << endl;
     ss << "Genotype: " << this->plant_height.get_genotype_str() << endl;
-    ss << "Phenotype: " << this->plant_height.get_phenotype() << endl;
+    ss << "Phenotype: " << this->plant_height.get_phenotype() << endl << endl;
     
 
     return ss.str();
@@ -104,3 +108,4 @@ void Pea_Plant::add_flower_position(Trait t){
 void Pea_Plant::add_plant_height(Trait t){
     this->plant_height = t;
 }
+

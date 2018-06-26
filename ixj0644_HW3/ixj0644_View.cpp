@@ -4,21 +4,45 @@
 View::View(Pea_Plant& pp): pea_plant(pp){};
 
 void View::get_menu(){
-    cout << "printing menu" << endl;
+    cout << R"(
+
+=======================Menu=======================
+(1) View Plant
+(2) Change Trait
+--------------------------------------------------
+(0) Exit Program
+==================================================
+
+)";
+
 }
 
 void View::prompt_for_allele_letter(){
-    cout << "Prompting for allele letter" << endl;
+    cout << "Enter Allele: ";
 }
 
 void View::prompt_for_allele_dominance(){
-    cout << "Prompting for allele dominance" << endl;
+    cout << endl << "Dominante (yes=1, no=0): ";
 }
 
 void View::prompt_for_trait_name(){
-    cout << "Prompting for trait name " << endl;
+    cout << R"(
+------------
+Change Trait
+------------
+1) Seed Shape
+2) Seed Color
+3) Pod Shape
+4) Pod Color
+5) Flower Color
+6) Flower Position
+7) Plant Height
+------------
+)";
 }
 
 void View::view_all_traits(){
-    cout << "Priting all traits" << endl;
+    cout << "Priting all traits" << endl << endl;
+    cout << pea_plant.view_all_traits() << endl;
+    
 }

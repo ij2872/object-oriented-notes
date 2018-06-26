@@ -1,3 +1,5 @@
+#ifndef ixj0644_Trait_h
+#define ixj0644_Trait_h
 
 #include "ixj0644_Genotype.h"
 #include <sstream>
@@ -25,3 +27,5 @@ private:
 };
 
 
+
+#endif

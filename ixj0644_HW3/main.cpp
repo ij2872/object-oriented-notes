@@ -6,8 +6,9 @@
 using namespace std;
 
 int main(){
-	Pea_Plant pp;
-	View v(pp);
+	Pea_Plant pp{};
+
+	View v{pp};
 	Controller ctr(pp, v);
 	ctr.cli();
 
