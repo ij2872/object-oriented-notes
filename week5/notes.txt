@@ -1,0 +1,33 @@
+Notes
+
+Abstract Classes
+req atleast 1
+   [Virtual float pay() = 0;
+
+interface
+req. all functions
+
+fsaihfisahfiosahfiohsa fiahfi su
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,5 +1,9 @@
 #ifndef ixj0644_Allele_h
 #define ixj0644_Allele_h
+#include <iostream>
+
+
+using namespace std;
 
 class Allele{
 public:
@@ -17,11 +21,13 @@ public:
 
     // @returns {bool} get_dominance true if dominate, false if recessive
     bool get_dominance();
+    
+    friend std::ostream& operator<<(ostream& ost, Allele& rhs);
 
-private:
-
+protected:
     char letter;
     bool dominance;
+
 };
 
 #endif

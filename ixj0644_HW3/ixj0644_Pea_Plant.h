@@ -27,6 +27,7 @@ private:
     Trait flower_color;
     Trait flower_position;
     Trait plant_height;
+
 };
 
 #endif

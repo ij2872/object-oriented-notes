@@ -3,7 +3,7 @@ CXXFLAGS = -std=c++11
 all: exec
 
 exec: main.o Allele.o Genotype.o Trait.o Pea_Plant.o View.o Controller.o Pea_Plant_Map.o
-	$(CXX) $(CXXFLAGS) -o a.out main.o ixj0644_Allele.o ixj0644_Genotype.o ixj0644_Trait.o ixj0644_Pea_Plant.o ixj0644_View.o ixj0644_Controller.o ixj0644_Pea_Plant_Trait_Maps.o
+	$(CXX) $(CXXFLAGS) -o a.out ixj0644_main.o ixj0644_Allele.o ixj0644_Genotype.o ixj0644_Trait.o ixj0644_Pea_Plant.o ixj0644_View.o ixj0644_Controller.o ixj0644_Pea_Plant_Trait_Maps.o
 
 main.o: ixj0644_main.cpp 
 	$(CXX) $(CXXFLAGS) -c ixj0644_main.cpp
