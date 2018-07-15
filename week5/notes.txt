@@ -7,9 +7,24 @@ req atleast 1
 interface
 req. all functions
 
-fsaihfisahfiosahfiohsa fiahfi su
+
+Errors
+
+class bad_area: public exception {};
+
+@function(){
+....throw bad_area{}
+}
 
 
+main{
+    try{}
+    catch(bad_area e){
+        cerr << "text!" ;
+    }
+}
+
+Exception - an object created to represent an error.
 
 
 

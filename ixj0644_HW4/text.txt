@@ -1,0 +1,4 @@
+c:1
+c: Dominance= 1
+a: 1: b
+ab: Dominance=1
