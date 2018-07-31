@@ -1,0 +1,68 @@
+# Week 7
+
+Day 2
+------------------------------------------------------------------------------
+
+std::string input(std::string msg,
+			std::string title,
+			std::string default_text,
+			std::string cancel_text
+				
+);
+
+
+
+std::string Dialogs::input(std::string msg,
+			std::string title,
+			std::string default_text,
+			std::string cancel_text){
+	Gtk::Dialog *dialog = new Gtk::Dialog();
+	dialog->set_title(title);
+	
+	Gtk::Label *label = new Gtk::Label(msg);
+	dialog->get_content_area()->pack_start(*label);
+	label->show();
+
+	dialog->add_button("Cancel", 0);
+	dialog->add_button("OK", 1);
+	dialog->set_default_response(1); // if they just hit ok
+
+	Gtk::Entry *entry = new Gtk::Entry();
+	entry->set_text(default_text);
+	entry->set_max_length(50);
+	entry->show();
+
+	// add to vertical box
+	dialog->get_vbox()->pack_start(*entry);
+
+	// need to run it
+	int result = dialog->run();
+	std::string text = entry->get_text();
+
+	dialog->close();
+	while(Gtk::Main::event_pending()){
+		Gtk::Main::interation();
+	
+	}
+	delete dialog;
+	delete label;
+	delete entry;	
+
+	// check results 
+	if(result ==1)
+		return text;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
