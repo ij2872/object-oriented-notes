@@ -8,18 +8,26 @@ main = do
     let string2 = args !! 1
     let string3 = args !! 2
     let string4 = args !! 3
+    let arg_length = length args;
+
+    -- Test for amount of arguments given by user
+    if(arg_length == 2)
+        then do let monohybrid_cross1 = geno string1 string2
+                mapM_ putStrLn monohybrid_cross1
+        else if (arg_length == 4) 
+        then do
+                -- Find monohybrid crosses
+                let monohybrid_cross1 = geno string1 string2;
+                let monohybrid_cross2 = geno string3 string4;
+                let dihybrid_cross = perm monohybrid_cross1 monohybrid_cross2;
+                mapM_ putStrLn monohybrid_cross1;
+                mapM_ putStrLn monohybrid_cross2;
+                
+                ----------- Running DiCross ----------
+                let result = combine_arr dihybrid_cross;
+                mapM_ putStrLn result;
+        else do putStrLn "-1"
     
-    -- Find monohybrid crosses
-    let monohybrid_cross1 = geno string1 string2;
-    let monohybrid_cross2 = geno string3 string4;
-    let dihybrid_cross = perm monohybrid_cross1 monohybrid_cross2;
-    --mapM_ putStrLn monohybrid_cross1;
-    --mapM_ putStrLn monohybrid_cross2;
-    
-    ----------- Running DiCross ----------
-    --mapM_ putStrLn head dihybrid_cross    
-    let result = combine_arr dihybrid_cross;
-    mapM_ putStrLn result;
 
 
 

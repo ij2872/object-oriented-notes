@@ -32,12 +32,13 @@ int main(){
     di_cross = get_di_cross();
   
     for(string& s : di_cross){
-        cout << s;
+        cout <<  s;
     }
+
     cout << endl;
   
+
   
     return 0;
 }
-
 
